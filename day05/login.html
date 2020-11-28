@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 引入初始化 -->
+    <link rel="stylesheet" href="/day05/assets/lib/layui/css/layui.css">
+    <!-- 引入自己的CSS -->
+    <link rel="stylesheet" href="/day05/assets/css/login.css">
+</head>
+
+<body>
+    <!-- 头部 log模块 -->
+    <div class="layui-main">
+        <img src="/day05/assets/images/logo.png" alt="">
+    </div>
+
+    <!-- 登录模块 -->
+    <div class="logbox">
+        <!-- 标题 -->
+        <div class="logbox1"></div>
+        <!-- 登录 -->
+        <div class="logbox2">
+            <!-- 账号 -->
+            <form class="layui-form" id="logbox2d">
+                <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-username"></i>  
+                    <input type="text" name="username" required lay-verify="required"  placeholder="请输入账号"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-password"></i>  
+                    <input type="password" name="password" required lay-verify="required|pass"  placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 提交 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit
+                        lay-filter="formDemo">立即提交</button>
+                </div>
+                <!-- 跳转注册 -->
+                <div class="layui-form-item">
+                    <a href="javascript:;" id="logbox2_a" class="dlb">去注册</a>
+                </div>
+        </div>
+
+        </form>
+
+        <!-- 注册 -->
+        <div class="logbox3">
+            <form class="layui-form" id="logbox3d">
+                <!-- 账号 -->
+                <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-username"></i>
+                    <input type="text" name="username" required lay-verify="required" placeholder="请输入账号"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 密码 -->
+                <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-password"></i> 
+                    <input type="password" name="password" required lay-verify="required|pass" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <!-- 确认密码 -->
+                <div class="layui-form-item">
+                        <i class="layui-icon layui-icon-password"></i> 
+                        <input type="password" name="repassword" required lay-verify="required|pass|repass" placeholder="请确认密码"
+                            autocomplete="off" class="layui-input">
+                    </div>
+                    <!-- 注册成功 -->
+                <div class="layui-form-item">
+                    <button class="layui-btn layui-btn-fluid layui-btn-normal" lay-submit
+                        lay-filter="formDemo">注册成功</button>
+                </div>
+                <!-- 跳转登录 -->
+                <div class="layui-form-item">
+                    <a href="javascript:;" id="logbox3_a" class="dlb">去登录</a>
+
+                </div>
+        </div>
+    </div>
+    <!-- 引入layui.js -->
+    <script src="/day05/assets/lib/layui/layui.all.js"></script>
+    <!-- 添加jQuery.js -->
+    <script src="/day05/assets/lib/jquery.js"></script>
+    <!-- 引入自定义js -->
+    <script src="/day05/assets/js/baseAPl.js"></script>
+    <!-- 添加自己的js -->
+    <script src="/day05/assets/js/login.js"></script>
+</body>
+
+</html>
